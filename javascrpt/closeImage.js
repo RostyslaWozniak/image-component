@@ -7,7 +7,6 @@ export default function closeImage(){
     });
     htmlImg.addEventListener('click', (e) => {
         e.stopPropagation();
-        console.log('hello')
         showImageContainer.classList.toggle('zoom-project-image');
         showImageContainer.style.overflow = 'scroll';
     });

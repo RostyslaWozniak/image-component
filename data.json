@@ -1,82 +1,152 @@
 [
     {
         "id": 1,
-        "name": "project-1",
-        "url": "./images/img-1.png"
+        "name": "Pierwsze zdjęcie",
+        "url": "./images/kot/kot1.png"
     },
     {
         "id": 2,
-        "name": "project-2",
-        "url": "./images/img-2.png"
+        "name": "skok",
+        "url": "./images/kot/kot2.png"
     },
     {
         "id": 3,
-        "name": "project-3",
-        "url": "./images/img-3.png"
+        "name": "stół",
+        "url": "./images/kot/kot3.png"
     },
     {
         "id": 4,
-        "name": "project-4",
-        "url": "./images/home.webp"
+        "name": "głośnik",
+        "url": "./images/kot/kot4.png"
     },
     {
         "id": 5,
-        "name": "project-1",
-        "url": "./images/img-1.png"
+        "name": "kot",
+        "url": "./images/kot/kot5.png"
     },
     {
         "id": 6,
-        "name": "project-2",
-        "url": "./images/img-2.png"
+        "name": "telewizia",
+        "url": "./images/kot/kot6.png"
     },
     {
         "id": 7,
-        "name": "project-3",
-        "url": "./images/img-3.png"
+        "name": "klapki",
+        "url": "./images/kot/kot7.png"
     },
     {
         "id": 8,
-        "name": "project-4",
-        "url": "./images/home.webp"
+        "name": "krzesło",
+        "url": "./images/kot/kot8.png"
     },
     {
         "id": 9,
-        "name": "project-1",
-        "url": "./images/img-1.png"
+        "name": "odkurzacz",
+        "url": "./images/kot/kot9.png"
     },
     {
         "id": 10,
-        "name": "project-2",
-        "url": "./images/img-2.png"
+        "name": "miseczka",
+        "url": "./images/kot/kot10.png"
     },
     {
         "id": 11,
-        "name": "project-3",
-        "url": "./images/img-3.png"
+        "name": "koszulka",
+        "url": "./images/kot/kot11.png"
     },
     {
         "id": 12,
-        "name": "project-4",
-        "url": "./images/home.webp"
+        "name": "dywanik",
+        "url": "./images/kot/kot12.png"
     },
     {
         "id": 13,
-        "name": "project-1",
-        "url": "./images/img-1.png"
+        "name": "kulki",
+        "url": "./images/kot/kot13.png"
     },
     {
         "id": 14,
-        "name": "project-2",
-        "url": "./images/img-2.png"
+        "name": "jabłka",
+        "url": "./images/kot/kot14.png"
     },
     {
         "id": 15,
-        "name": "project-3",
-        "url": "./images/img-3.png"
+        "name": "oceny",
+        "url": "./images/kot/kot15.png"
     },
     {
         "id": 16,
-        "name": "project-4",
-        "url": "./images/home.webp"
+        "name": "buty",
+        "url": "./images/kot/kot16.png"
+    },    
+    {
+        "id": 17,
+        "name": "project",
+        "url": "./images/kot/kot17.png"
+    },
+    {
+        "id": 18,
+        "name": "skok",
+        "url": "./images/kot/kot18.png"
+    },
+    {
+        "id": 19,
+        "name": "stół",
+        "url": "./images/kot/kot19.png"
+    },
+    {
+        "id": 20,
+        "name": "głośnik",
+        "url": "./images/kot/kot20.png"
+    },
+    {
+        "id": 21,
+        "name": "kot",
+        "url": "./images/kot/kot21.png"
+    },
+    {
+        "id": 22,
+        "name": "telewizia",
+        "url": "./images/kot/kot22.png"
+    },
+    {
+        "id": 23,
+        "name": "klapki",
+        "url": "./images/kot/kot23.png"
+    },
+    {
+        "id": 24,
+        "name": "krzesło",
+        "url": "./images/kot/kot24.png"
+    },
+    {
+        "id": 25,
+        "name": "odkurzacz",
+        "url": "./images/kot/kot25.png"
+    },
+    {
+        "id": 26,
+        "name": "miseczka",
+        "url": "./images/kot/kot26.png"
+    },
+    {
+        "id": 27,
+        "name": "koszulka",
+        "url": "./images/kot/kot27.png"
+    },
+    {
+        "id": 28,
+        "name": "dywanik",
+        "url": "./images/kot/kot28.png"
+    },
+    {
+        "id": 29,
+        "name": "kulki",
+        "url": "./images/kot/kot29.png"
+    },
+    {
+        "id": 30,
+        "name": "jabłka",
+        "url": "./images/kot/kot30.png"
     }
 ]

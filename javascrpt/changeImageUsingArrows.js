@@ -1,60 +1,60 @@
-// import { data }  from '../main.js';
-import data  from '../main.js';
-
-export default function changeImageUsingArrows(imageID){
+export default function changeImageUsingArrows(data, imageID){
     const htmlImg = document.querySelector('.show-image-container img');
     const rightArrow = document.querySelector('.right-arrow');
     const leftArrow = document.querySelector('.left-arrow');
 
     const imagesUrlArray = data.map(el => el.url);
-    let imageIndex = data.find(el => el.id === imageID).id - 1;
-    
+    let imageIndex = data.findIndex(el => el.id === imageID);
     hideArrows()
-    // right arrow
+    // right achange image
     rightArrow.addEventListener('click', e => {
-        e.stopPropagation()
-        imageIndex++
-        hideArrows()
-        htmlImg.setAttribute('src', imagesUrlArray[imageIndex]);
+        e.stopPropagation();
+        //change image with animation
+        changeImageWithAnimation('animation-change-image-right');
     });
-    //left arrow
+    //left change image
     leftArrow.addEventListener('click', e => {
-        e.stopPropagation()
-        imageIndex--
-        hideArrows()
-        htmlImg.setAttribute('src', imagesUrlArray[imageIndex]);
+        e.stopPropagation();
+        //change image with animation
+        changeImageWithAnimation('animation-change-image-left');
     });
     //event on keydown
     document.addEventListener('keydown', e => {
         // right arrow
         if(e.key === 'ArrowRight'){ 
             if(imageIndex + 1 === imagesUrlArray.length) return;
-            imageIndex++
-            hideArrows();
-            htmlImg.setAttribute('src', imagesUrlArray[imageIndex]);
-            rightArrow.style.scale = '130%';
-            rightArrow.style.rotate = '5deg';
+            //arrow nimation
+            rightArrow.classList.add('right-arrow-animation');
             setTimeout(() => {
-                rightArrow.style.scale = '100%';
-                rightArrow.style.rotate = '0deg';
-
+                rightArrow.classList.remove('right-arrow-animation');
             }, 200);
+            //change image with animation 
+            changeImageWithAnimation('animation-change-image-right');
         }
         // left arrow
         if(e.key === 'ArrowLeft'){
             if(imageIndex === 0) return;
-            imageIndex--
-            hideArrows()
-            htmlImg.setAttribute('src', imagesUrlArray[imageIndex]);
-            leftArrow.style.scale = '130%';
-            leftArrow.style.rotate = '-5deg';
+            //arrow nimation
+            leftArrow.classList.add('.left-arrow-animation');
             setTimeout(() => {
-                leftArrow.style.scale = '100%';
-                leftArrow.style.rotate = '0deg';
+                leftArrow.classList.remove('.left-arrow-animation')
             }, 200);
+            //change image with animation
+            changeImageWithAnimation('animation-change-image-left');
         }
-    })
-    
+    });
+
+    //change image with animation
+    function changeImageWithAnimation(animationClassName){
+        htmlImg.classList.add(animationClassName)
+        setTimeout(() => {
+            animationClassName === 'animation-change-image-right' ? imageIndex++ : imageIndex--;
+            hideArrows();
+            htmlImg.setAttribute('src', imagesUrlArray[imageIndex]);
+        }, 400);
+        setTimeout(() => htmlImg.classList.remove(animationClassName), 1000);
+    }
+
     //hide or show arrows
     function hideArrows(){
         imageIndex === 0 ? leftArrow.style.display = 'none' : leftArrow.style.display = 'block'

@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 100dvh;
+    min-height: 100dvh;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -31,15 +31,14 @@ header{
     position: fixed;
     width: 100%;
     margin-bottom: 50px;
-    padding: 40px 15%;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--font-color);
     background-color: var(--background-color);
     text-align: center;
-    box-shadow: inset 0 0 50px 10px var(--primary-color);
-    box-shadow:  0 0 50px 10px var(--background-color);
+    box-shadow: inset 0 0 50px 10px var(--primary-color), 0 0 50px 10px var(--background-color);
     transition: .3s ease-in-out;
     z-index: 20;
 }
@@ -54,28 +53,21 @@ h1{
 }
 .search-input{
     width: 20dvw;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
-    font-size: 1.8rem;
-}
-.search-btn{
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 10px;
-    font-size: 1.8rem;
-    cursor: pointer;
+    font-size: 1.2rem;
 }
 .images-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 300px 10% 150px;
-    gap: 80px;
+    gap: 100px;
 }
 .image-box{
     position: relative;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: min(300px, 100%);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,13 +91,14 @@ h1{
     transition: .3s ease-in-out;
 }
 .image-button{
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     background: transparent;
     padding-block: 20px;
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
     color: var(--primary-color);
     opacity: 0;
     cursor: pointer;
@@ -121,7 +114,6 @@ h1{
 .active-image-box{
     background-size: 130%;
     box-shadow: 0 0 50px 30px var(--primary-color);
-    
 }
 
 /* show image */
@@ -136,12 +128,37 @@ h1{
     align-items: center;
     backdrop-filter: blur(10px) brightness(40%);
     z-index: 30;
+
 }
 .show-image-container img{
     border-radius: 10px;
     height: min(80dvh, 50dvw);
     cursor: zoom-in;
     transition: .3s ease-in-out;
+}
+.show-image-container img.animation-change-image-right{
+    animation: animationChangeImageRight 1s linear
+}
+.show-image-container img.animation-change-image-left{
+    animation: animationChangeImageLeft 1s linear
+}
+@keyframes animationChangeImageRight {
+    50%{
+        transform: translateX(-600%);
+        width: 0;
+    }
+    55%{
+        transform: translateX(400%);
+    }
+}
+@keyframes animationChangeImageLeft {
+    50%{
+        transform: translateX(600%);
+        width: 0;
+    }
+    55%{
+        transform: translateX(-400%);
+    }
 }
 .show-image-container .right-arrow,
 .show-image-container .left-arrow{
@@ -151,6 +168,7 @@ h1{
     background-repeat: no-repeat;
     cursor: pointer;
     transition: .3s ease-in-out;
+    
 }
 .show-image-container .left-arrow{
     left: 10px;
@@ -166,21 +184,38 @@ h1{
 .show-image-container .right-arrow:hover{
     transform: scale(120%);
 }
+.right-arrow-animation{
+    animation: rightArrowAnimation .2s linear;
+}
+.left-arrow-animation{
+    animation: leftArrowAnimation .2s linear;
+}
+@keyframes rightArrowAnimation {
+    50%{
+        transform: rotate(5deg) scale(130%);
+    }
+}
+@keyframes leftArrowAnimation {
+    50%{
+        transform: rotate(-5deg) scale(130%);
+    }
+}
 /* zoom */
 .zoom-project-image img{
-    scale: 150%;
+    transform: scale(200%);
     cursor: zoom-out;
+    z-index: 1;
 }
 
 footer{
-    min-height: 150px;
+    min-height: 100px;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--background-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 750px) {

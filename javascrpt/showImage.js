@@ -1,9 +1,7 @@
-// import { data }  from '../main.js';
-import data  from '../main.js';
 import changeImageUsingArrows from './changeImageUsingArrows.js';
 import closeImage from './closeImage.js';
 
-export default function showImage(imageID){
+export default function showImage(data, imageID){
     //creating img with background
     const showImageContainer = document.createElement('div');
     document.body.appendChild(showImageContainer);
@@ -26,7 +24,7 @@ export default function showImage(imageID){
     rightArrow.classList.add('right-arrow');
 
 // change image functions 
-    changeImageUsingArrows(imageID);
+    changeImageUsingArrows(data, imageID);
 
 //close image
     closeImage();

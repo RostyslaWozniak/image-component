@@ -8,22 +8,40 @@ import backgroundAnimation from './javascrpt/backgroundAnimation.js';
 import headerToggle from './javascrpt/headerToggle.js';
 
 
-const data = [...dataFromJSON]
+let data = [...dataFromJSON];
 
-// const searchInput = document.querySelector('.search-input');
-// const searchBtn = document.querySelector('.search-btn');
-// searchBtn.addEventListener('click', () => {
-   
+//start program
+data.forEach(imageObj => {
+    generateImagesFromData(imageObj)
 
-//     data.forEach(image => {
-//         if(image.name === searchInput.value){
-//             generateImagesFromData(image)
-//             console.log(image)
-//         }
+});
+//showing img name while hovering
+showProjectsDescription();
         
-//     })
+//enlarge the image on click
+showProjectImage(data);
+
+
+
+//search
+const searchInput = document.querySelector('.search-input');
+
+searchInput.addEventListener('input', () => {
     
-// })
+    const images = document.querySelectorAll('.image-box');
+    data = [];
+    images.forEach(image => image.remove());
+
+    data = dataFromJSON.filter(el => searchInput.value.toLowerCase().split('').every(char => el.name.toLowerCase().includes(char)));
+    data.forEach(imageObj => {
+        generateImagesFromData(imageObj);
+    });
+    //showing img name while hovering
+    showProjectsDescription();
+            
+    //enlarge the image on click
+    showProjectImage(data);
+});
 
 export default data;
 
@@ -31,18 +49,10 @@ export default data;
 
 
 
-//start program
-data.forEach(imageObj => generateImagesFromData(imageObj));
 
-//showing img name while hovering
-showProjectsDescription();
-
-//enlarge the image on click
-showProjectImage();
 
 //background
 setInterval(backgroundAnimation, 500);
 
 // toggle header bar
 headerToggle();
-
