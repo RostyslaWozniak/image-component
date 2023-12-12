@@ -9,7 +9,7 @@ import headerToggle from './javascrpt/headerToggle.js';
 
 
 let data = [...dataFromJSON];
-
+console.log(data)
 //start program
 data.forEach(imageObj => {
     generateImagesFromData(imageObj)

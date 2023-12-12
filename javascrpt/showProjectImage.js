@@ -8,7 +8,6 @@ export default function showProjectImage(data){
         const img =  data.find(element => element.id === id);
         e.stopPropagation();
         showImage(data, img.id)
-        
     }))
 
 }

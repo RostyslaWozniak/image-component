@@ -2,151 +2,151 @@
     {
         "id": 1,
         "name": "Pierwsze zdjęcie",
-        "url": "./images/kot/kot1.png"
+        "url": "./kot-images/kot1.jpg"
     },
     {
         "id": 2,
         "name": "skok",
-        "url": "./images/kot/kot2.png"
+        "url": "./kot-images/kot2.jpg"
     },
     {
         "id": 3,
         "name": "stół",
-        "url": "./images/kot/kot3.png"
+        "url": "./kot-images/kot3.jpg"
     },
     {
         "id": 4,
         "name": "głośnik",
-        "url": "./images/kot/kot4.png"
+        "url": "./kot-images/kot4.jpg"
     },
     {
         "id": 5,
         "name": "kot",
-        "url": "./images/kot/kot5.png"
+        "url": "./kot-images/kot5.jpg"
     },
     {
         "id": 6,
         "name": "telewizia",
-        "url": "./images/kot/kot6.png"
+        "url": "./kot-images/kot6.jpg"
     },
     {
         "id": 7,
         "name": "klapki",
-        "url": "./images/kot/kot7.png"
+        "url": "./kot-images/kot7.jpg"
     },
     {
         "id": 8,
         "name": "krzesło",
-        "url": "./images/kot/kot8.png"
+        "url": "./kot-images/kot8.jpg"
     },
     {
         "id": 9,
         "name": "odkurzacz",
-        "url": "./images/kot/kot9.png"
+        "url": "./kot-images/kot9.jpg"
     },
     {
         "id": 10,
         "name": "miseczka",
-        "url": "./images/kot/kot10.png"
+        "url": "./kot-images/kot10.jpg"
     },
     {
         "id": 11,
         "name": "koszulka",
-        "url": "./images/kot/kot11.png"
+        "url": "./kot-images/kot11.jpg"
     },
     {
         "id": 12,
         "name": "dywanik",
-        "url": "./images/kot/kot12.png"
+        "url": "./kot-images/kot12.jpg"
     },
     {
         "id": 13,
         "name": "kulki",
-        "url": "./images/kot/kot13.png"
+        "url": "./kot-images/kot13.jpg"
     },
     {
         "id": 14,
         "name": "jabłka",
-        "url": "./images/kot/kot14.png"
+        "url": "./kot-images/kot14.jpg"
     },
     {
         "id": 15,
         "name": "oceny",
-        "url": "./images/kot/kot15.png"
+        "url": "./kot-images/kot15.jpg"
     },
     {
         "id": 16,
         "name": "buty",
-        "url": "./images/kot/kot16.png"
+        "url": "./kot-images/kot16.jpg"
     },    
     {
         "id": 17,
         "name": "project",
-        "url": "./images/kot/kot17.png"
+        "url": "./kot-images/kot17.jpg"
     },
     {
         "id": 18,
         "name": "skok",
-        "url": "./images/kot/kot18.png"
+        "url": "./kot-images/kot18.jpg"
     },
     {
         "id": 19,
         "name": "stół",
-        "url": "./images/kot/kot19.png"
+        "url": "./kot-images/kot19.jpg"
     },
     {
         "id": 20,
         "name": "głośnik",
-        "url": "./images/kot/kot20.png"
+        "url": "./kot-images/kot20.jpg"
     },
     {
         "id": 21,
         "name": "kot",
-        "url": "./images/kot/kot21.png"
+        "url": "./kot-images/kot21.jpg"
     },
     {
         "id": 22,
         "name": "telewizia",
-        "url": "./images/kot/kot22.png"
+        "url": "./kot-images/kot22.jpg"
     },
     {
         "id": 23,
         "name": "klapki",
-        "url": "./images/kot/kot23.png"
+        "url": "./kot-images/kot23.jpg"
     },
     {
         "id": 24,
         "name": "krzesło",
-        "url": "./images/kot/kot24.png"
+        "url": "./kot-images/kot24.jpg"
     },
     {
         "id": 25,
         "name": "odkurzacz",
-        "url": "./images/kot/kot25.png"
+        "url": "./kot-images/kot25.jpg"
     },
     {
         "id": 26,
         "name": "miseczka",
-        "url": "./images/kot/kot26.png"
+        "url": "./kot-images/kot26.jpg"
     },
     {
         "id": 27,
         "name": "koszulka",
-        "url": "./images/kot/kot27.png"
+        "url": "./kot-images/kot27.jpg"
     },
     {
         "id": 28,
         "name": "dywanik",
-        "url": "./images/kot/kot28.png"
+        "url": "./kot-images/kot28.jpg"
     },
     {
         "id": 29,
         "name": "kulki",
-        "url": "./images/kot/kot29.png"
+        "url": "./kot-images/kot29.jpg"
     },
     {
         "id": 30,
         "name": "jabłka",
-        "url": "./images/kot/kot30.png"
+        "url": "./kot-images/kot30.jpg"
     }
 ]
